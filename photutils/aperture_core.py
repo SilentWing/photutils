@@ -540,7 +540,7 @@ class EllipticalAperture(PixelAperture):
         The semiminor axis.
     theta : float
         The position angle of the semimajor axis in radians
-        (counterclockwise).
+        (counterclockwise). The origin is in the x-axis (right).
 
     Raises
     ------
@@ -623,7 +623,7 @@ class SkyEllipticalAnnulus(SkyAperture):
         semiminor axis is determined by scaling by a_in/a_out.
     theta : `~astropy.units.Quantity`
         The position angle of the semimajor axis (counterclockwise), either
-        in angular or pixel units.
+        in angular or pixel units. The origin is in the x-axis (right).
     """
 
     def __init__(self, positions, a_in, a_out, b_out, theta):
